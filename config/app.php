@@ -291,9 +291,9 @@ return [
             'persistent' => false,
             'timezone' => 'UTC',
             'host' => env('DB_HOST', 'localhost'),
-            'username' => env('DB_USERNAME'),
-            'password' => env('DB_PASSWORD'),
-            'database' => env('DB_NAME'),
+            'username' => env('DB_USERNAME', 'test'),
+            'password' => env('DB_PASSWORD', 'test'),
+            'database' => env('DB_NAME', 'test'),
 
             /**
              * For MariaDB/MySQL the internal default changed from utf8 to utf8mb4, aka full utf-8 support, in CakePHP 3.6
